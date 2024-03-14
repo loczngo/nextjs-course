@@ -1,0 +1,25 @@
+.container{
+display: flex;
+gap: 20px;
+flex-direction: column;
+margin-bottom: 20px;
+}
+.top{
+display: flex;
+
+}
+
+.imgContainer{
+position: relative;
+width: 90%;
+height: 400px;
+}
+.date{
+font-size: small;
+transform: rotate(270deg);
+margin: auto;
+}
+
+.img{
+object-fit: cover;
+}

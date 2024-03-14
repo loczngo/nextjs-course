@@ -1,0 +1,50 @@
+.imgContainer{
+    position: relative;
+    flex: 1;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1;
+}
+.textFirst{
+    color: rgb(146, 49, 236);
+    font-size: 20px;
+}
+.textSecond{
+    font-size: 50px;
+}
+.wrappers{
+    display: flex;
+    justify-content: space-between;
+}
+.textWrap{
+    color: blueviolet;
+    font-size: 30px;
+}
+.container{
+    display: flex;
+}
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .desc{
+    text-align: right;
+    }
+    .wrappers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
