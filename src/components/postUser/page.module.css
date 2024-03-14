@@ -1,0 +1,53 @@
+.container{
+
+    display: flex;
+    gap:100px;
+}
+
+.imgContainer{
+    flex: 1;
+    position: relative;
+    height: calc(100vh - 200px);
+}
+.imgContainers{
+    position: relative;
+    height: 40px;
+}
+.textContainer{
+  flex: 2;
+  flex-direction: column;
+  gap: 10px;
+}
+.flexRow{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.imgContainers{
+    width: 50px;
+    height: 50px;
+}
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.author{
+    color: rgb(141, 135, 135);
+}
+.imgs{
+    border-radius: 30px;
+}
+.title{
+
+    font-size: 54px;
+}
+
+
+@media (max-width:768px){
+    .imgContainer{
+        display: none;
+    }
+}
