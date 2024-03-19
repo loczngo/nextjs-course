@@ -18,12 +18,13 @@ export default async function AdminUsers() {
               width={50}
               height={50}
               style={{ borderRadius:"20px" }}
-            ></Image>
+            > </Image>
             <span>{user.username}</span>
           </div>
+
           <form action={deleteUser} style={{ display:"flex" }}>
             <input type="hidden" name="id" value={user.id} ></input>
-            <button className={styles.deletebutton} style={{marginRight:"30px",padding:"15px",borderRadius:"12px",backgroundColor:"blueviolet",border:"0"  }}  >Delete</button>
+            <button className={styles.deletebutton} style={{marginRight:"30px",padding:"15px",borderRadius:"12px",backgroundColor:"blueviolet",border:"0"  }}  > Delete</button>
           </form>
         </div>
       ))}

@@ -7,7 +7,7 @@ export default function AdminPostForm({userId}) {
   const [state, formAction] = useFormState(AddPost, undefined);
   return <form action={formAction} className={styles.container}>
       <h1 style={{ textAlign:"center",margin:"20px" }}>CREATE NEW POST</h1>
-      <input type="hidden" name="userId" value={userId} />
+      <input type="text" name="userId" value={userId} />
       <input name="title" placeholder="Title"></input>
       <textarea name="desc" placeholder="Description" row={10}></textarea>
       <input name="slug" placeholder="Slug"></input>

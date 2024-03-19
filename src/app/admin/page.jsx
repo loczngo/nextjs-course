@@ -7,6 +7,7 @@ import AdminUserForm from "@/components/adminUserForm/AdminUserForm";
 import { auth } from "@/libs/auth";
 export default async function AdminPage() {
   const session = await auth()
+  console.log("user cred",session)
   return (
     <div className={styles.container} style={{ paddingTop:"30px" }} >
       <div className={styles.row}>
@@ -17,7 +18,7 @@ export default async function AdminPage() {
           </Suspense>
         </div>
         <div className={styles.col}>
-          <AdminPostForm userId={session.userId}></AdminPostForm>
+          <AdminPostForm userId={session.user.id}></AdminPostForm>
         </div>
       </div>
 
@@ -29,7 +30,7 @@ export default async function AdminPage() {
           </Suspense>
         </div>
         <div className={styles.col}>
-          <AdminUserForm userId={session.userId}></AdminUserForm>
+          <AdminUserForm userId={session.user.id}></AdminUserForm>
         </div>
       </div>
     </div>

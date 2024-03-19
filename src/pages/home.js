@@ -3,7 +3,7 @@ import React from "react";
 
 
 const BLogs = () => {
-  return <div>BLogs</div>;
+  return <div></div>;
 };
 
 export default BLogs;
